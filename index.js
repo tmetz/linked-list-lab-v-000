@@ -1,6 +1,6 @@
 
 function getName(node) {
-  return (node[name]);
+  return (node["name"]);
 }
 
 function headNode(linkedList, collection) {
