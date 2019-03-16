@@ -8,5 +8,5 @@ function headNode(linkedList, collection) {
 }
 
 function next(node, collection) {
-  return (collection[node][next]);
+  return (collection[node[next]]);
 }
