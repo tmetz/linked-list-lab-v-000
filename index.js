@@ -8,5 +8,6 @@ function headNode(linkedList, collection) {
 }
 
 function next(node, collection) {
-  return (collection[node[next]]);
+  let nextAddress = node[1];
+  return (collection[nextAddress]);
 }
