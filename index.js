@@ -31,14 +31,11 @@ function addressAt(index, linkedList, collection) {
 }
 
 function indexAt(node, collection, linkedList) {
-  else {
-    let testNode = headNode(linkedList, collection);
-    let i = 0;
-    while (testNode != node){
-      testNode = next(testNode, collection);
-      i++;
-    }
-    return i - 1;
+  let testNode = headNode(linkedList, collection);
+  let i = 0;
+  while (testNode != node){
+    testNode = next(testNode, collection);
+    i++;
   }
-
+  return i - 1;
 }
