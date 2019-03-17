@@ -37,5 +37,5 @@ function indexAt(node, collection, linkedList) {
     testNode = next(testNode, collection);
     i++;
   }
-  return i - 1;
+  return i;
 }
