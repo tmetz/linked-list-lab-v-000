@@ -43,5 +43,5 @@ function indexAt(node, collection, linkedList) {
       }
     }
   }
-  
+
 }
