@@ -47,8 +47,8 @@ function insertNodeAt(index, newAddress, linkedList, collection) {
   let prevNodeInd = indexAt(prevNode, collection, linkedList);
   let nextNodeInd = indexAt(nextNode, collection, linkedList);
 
-  let prevNodeAdd = addressAt(prevNode, collection, linkedList);
-  let nextNodeAdd = addressAt(nextNode, collection, linkedList);
+  let prevNodeAdd = addressAt(prevNode, linkedList, collection);
+  let nextNodeAdd = addressAt(nextNode, linkedList, collection);
 
   prevNode.next = newAddress;
   let newNode = collection[newAddress];
