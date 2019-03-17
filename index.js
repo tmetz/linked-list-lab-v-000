@@ -39,3 +39,18 @@ function indexAt(node, collection, linkedList) {
   }
   return i;
 }
+
+function insertNodeAt(index, newAddress, linkedList, collection) {
+  let prevNode = nodeAt(index - 1, linkedList, collection);
+  let nextNode = nodeAt(index + 1, linkedList, collection);
+
+  let prevNodeInd = indexAt(prevNode, collection, linkedList);
+  let nextNodeInd = indexAt(nextNode, collection, linkedlist);
+
+  let prevNodeAdd = addressAt(prevNode, collection, linkedList);
+  let nextNodeAdd = addressAt(nextNode, collection, linkedList);
+
+  prevNode.next = newAddress;
+  let newNode = collection[newAddress];
+  newNode.next = nextNodeAdd;
+}
