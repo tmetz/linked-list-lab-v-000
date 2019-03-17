@@ -21,5 +21,11 @@ function nodeAt(index, linkedList, collection) {
 }
 
 function addressAt(index, linkedList, collection) {
-  return (collection[nodeAt(index, linkedList, collection)]);
+  if (index == 0) {
+    return linkedList;
+  }
+  else {
+    let node = nodeAt(index - 1, linkedList, collection);
+    return node.next;
+  }
 }
