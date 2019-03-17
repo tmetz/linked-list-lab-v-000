@@ -37,15 +37,11 @@ function indexAt(node, collection, linkedList) {
   else {
     let testNode = node;
     let i = 1;
-    while (testNode["next"]){
+    while (testNode != node){
       testNode = next(testNode, collection);
-      if (testNode == node) {
-        return i;
-      }
-      else {
-        i++;
-      }
+      i++;
     }
+    return i - 1;
   }
 
 }
