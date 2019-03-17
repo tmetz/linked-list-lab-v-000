@@ -29,3 +29,19 @@ function addressAt(index, linkedList, collection) {
     return node.next;
   }
 }
+
+function indexAt(node, collection, linkedList) {
+  if (node == collection[linkedList]) {
+    return 0;
+  }
+  else {
+    let testNode = node;
+    for (let i = 1; i < index; i++) {
+      testNode = next(testNode, collection);
+      if (testNode == node) {
+        return i;
+      }
+    }
+  }
+  
+}
