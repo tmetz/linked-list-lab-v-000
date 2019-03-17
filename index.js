@@ -21,5 +21,5 @@ function nodeAt(index, linkedList, collection) {
 }
 
 function addressAt(index, linkedList, collection) {
-  return (collection(nodeAt(index, linkedList, collection)));
+  return (collection[nodeAt(index, linkedList, collection)]);
 }
