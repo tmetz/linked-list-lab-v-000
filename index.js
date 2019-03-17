@@ -42,7 +42,7 @@ function indexAt(node, collection, linkedList) {
 
 function insertNodeAt(index, newAddress, linkedList, collection) {
   let prevNode = nodeAt(index - 1, linkedList, collection);
-  let nextNode = nodeAt(index + 1, linkedList, collection);
+  let nextNode = nodeAt(index, linkedList, collection);
 
   let prevNodeInd = indexAt(prevNode, collection, linkedList);
   let nextNodeInd = indexAt(nextNode, collection, linkedList);
