@@ -31,12 +31,9 @@ function addressAt(index, linkedList, collection) {
 }
 
 function indexAt(node, collection, linkedList) {
-  if (node == collection[linkedList]) {
-    return 0;
-  }
   else {
-    let testNode = node;
-    let i = 1;
+    let testNode = headNode(linkedList, collection);
+    let i = 0;
     while (testNode != node){
       testNode = next(testNode, collection);
       i++;
